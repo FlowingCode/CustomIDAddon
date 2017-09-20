@@ -1,8 +1,7 @@
 package com.vaadin.addons.customid.demo;
 
+import java.util.ArrayList;
 import java.util.List;
-import java.util.stream.Collectors;
-import java.util.stream.IntStream;
 
 import javax.servlet.annotation.WebServlet;
 
@@ -28,7 +27,7 @@ import com.vaadin.ui.UI;
 import com.vaadin.ui.VerticalLayout;
 
 @Theme("demo")
-@Title("MyComponent Add-on Demo")
+@Title("Custom Id Add-on Demo")
 @SuppressWarnings("serial")
 public class DemoUI extends UI
 {
@@ -60,7 +59,7 @@ public class DemoUI extends UI
         OptionGroup single = new OptionGroup("Single Selection");
         single.addItems("Single", "Sola", "Yksi");
                 
-        OptionGroupCustomIdExtension extension = new OptionGroupCustomIdExtension(single,"CUSTOM_ID");
+        final OptionGroupCustomIdExtension extension = new OptionGroupCustomIdExtension(single,"CUSTOM_ID");
         
         Button b = new Button("Test");
         b.addClickListener(new ClickListener() {
@@ -79,7 +78,7 @@ public class DemoUI extends UI
 		// twincolselect
 		TwinColSelect tcs = new TwinColSelect();
         tcs.addItems("item 1", "item 2", "item 3");
-        TwinColSelectCustomIdExtension twinColExtension = new TwinColSelectCustomIdExtension(tcs, "CustomLeftHTMLID", "CustomRightHTMLID");
+        final TwinColSelectCustomIdExtension twinColExtension = new TwinColSelectCustomIdExtension(tcs, "CustomLeftHTMLID", "CustomRightHTMLID");
         
         Button b2 = new Button("Test Twin Select");
         b2.addClickListener(new ClickListener() {
@@ -96,7 +95,10 @@ public class DemoUI extends UI
         gridLayout.setComponentAlignment(tcsLayout, Alignment.MIDDLE_CENTER);
         
         // listselect
-        List<String> data = IntStream.range(0, 6).mapToObj(i -> "Option " + i).collect(Collectors.toList());
+        List<String> data = new ArrayList<>();
+        for(int i = 0; i < 6; i++) {
+        	data.add("Option " + i);
+        }
         ListSelect ls = new ListSelect("", data);
         ls.setRows(6);
         ls.setNullSelectionAllowed(false);
