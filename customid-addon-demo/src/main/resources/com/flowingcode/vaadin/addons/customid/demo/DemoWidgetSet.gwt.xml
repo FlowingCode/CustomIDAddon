@@ -44,5 +44,7 @@
 
     
 
-    <inherits name="com.vaadin.addons.customid.WidgetSet" />
+    
+
+    <inherits name="com.flowingcode.vaadin.addons.customid.WidgetSet" />
 </module>
