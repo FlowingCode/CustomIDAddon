@@ -20,9 +20,9 @@ import com.vaadin.ui.Button.ClickEvent;
 import com.vaadin.ui.Button.ClickListener;
 import com.vaadin.ui.DateField;
 import com.vaadin.ui.GridLayout;
-import com.vaadin.ui.ListSelect;
-import com.vaadin.ui.OptionGroup;
-import com.vaadin.ui.TwinColSelect;
+import com.vaadin.v7.ui.ListSelect;
+import com.vaadin.v7.ui.OptionGroup;
+import com.vaadin.v7.ui.TwinColSelect;
 import com.vaadin.ui.UI;
 import com.vaadin.ui.VerticalLayout;
 

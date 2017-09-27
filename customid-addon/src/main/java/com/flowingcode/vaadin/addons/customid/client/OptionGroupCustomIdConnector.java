@@ -6,7 +6,7 @@ import com.google.gwt.user.client.ui.Widget;
 import com.vaadin.client.ComponentConnector;
 import com.vaadin.client.ServerConnector;
 import com.vaadin.client.extensions.AbstractExtensionConnector;
-import com.vaadin.client.ui.VOptionGroup;
+import com.vaadin.v7.client.ui.VOptionGroup;
 import com.vaadin.shared.ui.Connect;
 
 @SuppressWarnings("serial")

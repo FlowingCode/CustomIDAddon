@@ -3,7 +3,7 @@ package com.flowingcode.vaadin.addons.customid;
 import com.flowingcode.vaadin.addons.customid.client.TwinColSelectCustomIdClientRpc;
 import com.flowingcode.vaadin.addons.customid.client.TwinColSelectCustomIdState;
 import com.vaadin.server.AbstractExtension;
-import com.vaadin.ui.TwinColSelect;
+import com.vaadin.v7.ui.TwinColSelect;
 
 /**
  * Extension that allows to add and change the HTML ID attribute of the two columns inside a TwinColSelect component.

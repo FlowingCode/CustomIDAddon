@@ -1,6 +1,6 @@
-# CustomID Add-on for Vaadin 7
+# CustomID Add-on for Vaadin 8
 
-CustomID is a UI extension add-on for Vaadin 7.
+CustomID is a UI extension add-on for Vaadin 8. 
 
 ## Features
 
@@ -21,7 +21,7 @@ To see the demo, navigate to http://localhost:8080/
 
 ## Release notes
 
-### Version 1.0-SNAPSHOT
+### Version 2.0.0-SNAPSHOT
 - First version
 
 ## Roadmap

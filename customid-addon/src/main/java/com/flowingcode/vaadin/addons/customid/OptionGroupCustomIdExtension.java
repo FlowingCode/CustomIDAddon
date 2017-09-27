@@ -6,7 +6,7 @@ package com.flowingcode.vaadin.addons.customid;
 import com.flowingcode.vaadin.addons.customid.client.OptionGroupCustomIdClientRpc;
 import com.flowingcode.vaadin.addons.customid.client.OptionGroupCustomIdState;
 import com.vaadin.server.AbstractExtension;
-import com.vaadin.ui.OptionGroup;
+import com.vaadin.v7.ui.OptionGroup;
 
 /**
  * This extension allows to change the HTML ID attribute of an OptionGroup. After initializing the OptionGroup (with their
