@@ -33,4 +33,10 @@ $darkgreen: darken($green, 30%);
              0px 34px 30px rgba(0,0,0,0.1);
         text-align: center;
 	}
+	
+	.v-gridlayout-slot {
+	    position: absolute;
+	    line-height: 1.55;
+	    border-style: groove;
+    }
 }
