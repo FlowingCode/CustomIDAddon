@@ -3,7 +3,7 @@ package com.flowingcode.vaadin.addons.customid;
 import com.flowingcode.vaadin.addons.customid.client.ListSelectCustomIdClientRpc;
 import com.flowingcode.vaadin.addons.customid.client.ListSelectCustomIdState;
 import com.vaadin.server.AbstractExtension;
-import com.vaadin.v7.ui.ListSelect;
+import com.vaadin.ui.ListSelect;
 
 @SuppressWarnings("serial")
 public class ListSelectCustomIdExtension extends AbstractExtension {

@@ -20,9 +20,9 @@ import com.vaadin.ui.Button.ClickEvent;
 import com.vaadin.ui.Button.ClickListener;
 import com.vaadin.ui.DateField;
 import com.vaadin.ui.GridLayout;
-import com.vaadin.v7.ui.ListSelect;
+import com.vaadin.ui.ListSelect;
 import com.vaadin.v7.ui.OptionGroup;
-import com.vaadin.v7.ui.TwinColSelect;
+import com.vaadin.ui.TwinColSelect;
 import com.vaadin.ui.UI;
 import com.vaadin.ui.VerticalLayout;
 
@@ -79,8 +79,9 @@ public class DemoUI extends UI
         gridLayout.setComponentAlignment(optionLayout, Alignment.MIDDLE_CENTER);
 		
 		// twincolselect
-		TwinColSelect tcs = new TwinColSelect();
-        tcs.addItems("item 1", "item 2", "item 3");
+        TwinColSelect<String> tcs = new TwinColSelect<>("Select Targets");
+        tcs.setItems("item 1", "item 2", "item 3");
+
         final TwinColSelectCustomIdExtension twinColExtension = new TwinColSelectCustomIdExtension(tcs, "CustomLeftHTMLID", "CustomRightHTMLID");
         
         Button b2 = new Button("Test Twin Select");
@@ -104,9 +105,8 @@ public class DemoUI extends UI
         for(int i = 0; i < 6; i++) {
         	data.add("Option " + i);
         }
-        ListSelect ls = new ListSelect("", data);
-        ls.setRows(6);
-        ls.setNullSelectionAllowed(false);
+        ListSelect<String> ls = new ListSelect<>("", data);
+        ls.setRows(6); 
         ListSelectCustomIdExtension lsExtension = new ListSelectCustomIdExtension(ls, "CUSTOM_ID");
         
         gridLayout.addComponent(ls, 1, 1);
