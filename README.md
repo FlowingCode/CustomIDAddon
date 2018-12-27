@@ -1,3 +1,5 @@
+[![Build Status](https://jenkins.flowingcode.com/job/CustomID-addon/badge/icon)](https://jenkins.flowingcode.com/job/CustomID-addon)
+
 # CustomID Add-on for Vaadin 8
 
 CustomID is a UI extension add-on for Vaadin 8. 
@@ -49,7 +51,7 @@ Add-on is distributed under Apache License 2.0. For license terms, see LICENSE.t
 
 CustomID is written by 
 
-- Martín López
+- MartÃ­n LÃ³pez
 - Paola De Bartolo	
 
 # Developer Guide
